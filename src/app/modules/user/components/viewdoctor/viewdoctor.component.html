@@ -1,0 +1,40 @@
+<section class="py-8">
+  <nav class="navbar ">
+      <div class="container-fluid">
+          <h4 style="color: rgb(13, 114, 80);">Doctors Lists</h4>
+          <div class="d-flex">
+             
+          </div>
+      </div>
+  </nav>
+  </section>
+  <div class="table-responsive-md">
+<table class="table table-bordered ">
+    <thead>
+      <tr class="clr2" >
+        <th scope="col">Id No</th>
+        <th scope="col">Name</th>
+        <th scope="col">specialization</th>
+        <th scope="col">Fees</th>
+        <th scope="col">Time</th>
+        <th scope="col">Action</th> 
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="clr" *ngFor="let stu of studentData">
+          <td>{{stu.id}}</td>
+          <td>{{stu.name}}</td>
+          <td>{{stu.specialization}}</td>
+          <td>{{stu.fees}}</td>
+          <td>{{stu.time}}</td>
+          <td>
+            <button (click)="bookNow(this.stu)"  class="btn btn-warning"data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</button>
+         
+          </td>
+        </tr>
+    </tbody>
+
+
+</table>
+</div>
+

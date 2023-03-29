@@ -1,0 +1,14 @@
+.navbar{
+    background-color:rgb(125, 192, 168);
+}
+.nav-item{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: x-large;
+    position: relative;
+    
+}

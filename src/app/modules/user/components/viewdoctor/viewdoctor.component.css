@@ -1,0 +1,22 @@
+.py-8{
+    margin-top: 80px;
+}
+
+.clr{
+    background-color: rgb(94, 191, 159);
+}
+
+.clr2{
+    background-image: linear-gradient(rgb(88, 144, 88),rgb(23, 118, 99));
+    color: white;
+}
+
+
+
+
+.clr:hover{
+    background-color: rgb(3, 99, 67);
+    color: white;
+}
+
+

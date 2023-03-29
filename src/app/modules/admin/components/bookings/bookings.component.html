@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  
+  
+
+    
+  <div class="row" >
+ 
+     
+    
+     
+      <div class="col-md-3" *ngFor="let stu of bookingData">
+          <div class="card" style="width: 25rem;">
+              <img src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg" class="img-fluid " style="width:auto;height: 10rem;"  >
+              <div class="card-body">
+                <h5 class="card-title"><span class="sp" >Id:</span>{{stu.id}}</h5>
+                <p class="card-text2"><span >Name:</span>  {{stu.name}}</p>
+                <p class="card-text2"><span >specialization:</span> {{stu.specialization}}</p>
+                <p class="card-text2"><span >Fees:</span>  {{stu.fees}}</p>
+                <p class="card-text2"><span>Time:</span> {{stu.time}}</p>
+                
+              </div>
+            </div>
+      </div>
+    
+  </div>
+
+ 
+
+ 
+</div>

@@ -1,0 +1,68 @@
+<!-- <table class="table table-bordered ">
+    <thead>
+      <tr class="clr2" >
+        <th scope="col">Id No</th>
+        <th scope="col">Name</th>
+        <th scope="col">specialization</th>
+        <th scope="col">Fees</th>
+        <th scope="col">Time</th>
+        <th scope="col">Action</th> 
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="clr" *ngFor="let stu of bookingData">
+          <td>{{stu.id}}</td>
+          <td>{{stu.name}}</td>
+          <td>{{stu.specialization}}</td>
+          <td>{{stu.fees}}</td>
+          <td>{{stu.time}}</td>
+          <td>
+           
+         
+          </td>
+        </tr>
+    </tbody>
+
+
+</table> -->
+
+
+<div class="container-fluid">
+  
+  
+
+    
+    <div class="row" >
+   
+       
+      
+       
+        <div class="col-md-3" *ngFor="let stu of bookingData">
+            <div class="card" style="width: 25rem;">
+                <img src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg" class="img-fluid " style="width:auto;height: 10rem;"  >
+                <div class="card-body">
+                  <h5 class="card-title"><span class="sp" >Id:</span>{{stu.id}}</h5>
+                  <p class="card-text2"><span >Name:</span>  {{stu.name}}</p>
+                  <p class="card-text2"><span >specialization:</span> {{stu.specialization}}</p>
+                  <p class="card-text2"><span >Fees:</span>  {{stu.fees}}</p>
+                  <p class="card-text2"><span>Time:</span> {{stu.time}}</p>
+                  
+                </div>
+              </div>
+        </div>
+      
+    </div>
+
+   
+
+   
+</div>
+
+
+
+
+
+
+
+
+

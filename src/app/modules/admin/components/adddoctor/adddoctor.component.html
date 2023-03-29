@@ -1,0 +1,97 @@
+<section class="py-8">
+<nav class="navbar ">
+    <div class="container-fluid">
+        <h4 style="color: rgb(13, 114, 80);">Doctors Lists</h4>
+        <div class="d-flex">
+            <button (click)="clickAddStudents()" class="btn btn-success"data-bs-toggle="modal" data-bs-target="#exampleModal">Add Doctors</button>
+        </div>
+    </div>
+</nav>
+</section>
+<div class="table-responsive-md">
+<table class="table table-bordered  ">
+    <thead>
+      <tr class="clr2" >
+        <th scope="col">Id No</th>
+        <th scope="col">Name</th>
+        <th scope="col">specialization</th>
+        <th scope="col">Fees</th>
+        <th scope="col">Time</th>
+        <th scope="col">Action</th> 
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="clr" *ngFor="let stu of studentData">
+          <td>{{stu.id}}</td>
+          <td>{{stu.name}}</td>
+          <td>{{stu.specialization}}</td>
+          <td>{{stu.fees}}</td>
+          <td>{{stu.time}}</td>
+          <td>
+            <button (click)="onEdit(stu)" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>&nbsp;
+            <button (click)="deleteStudents(stu)" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+    </tbody>
+
+
+</table>
+</div>
+
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Doctor Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label  class="form-label">Id</label>
+                  <input type="number" class="form-control" formControlName="id">
+              
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" formControlName="name" >
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">specialization</label>
+                    <input type="text" class="form-control" formControlName="specialization" >
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Fees</label>
+                    <input type="number" class="form-control" formControlName="fees" >
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Time</label>
+                    <input type="text" class="form-control" formControlName="time" >
+                  </div>
+                
+               
+               
+              </form>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" *ngIf="showAdd" (click)=" postStudentDetails()" class="btn btn-primary">Add</button>
+          <button type="button" *ngIf="showUpdate" (click)=" updateStudentDetails()" class="btn btn-warning">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

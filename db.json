@@ -1,0 +1,138 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Mariya",
+      "specialization": "Neurosurgeon",
+      "fees": 2000,
+      "time": "1.00pm"
+    },
+    {
+      "id": 2,
+      "name": "Anna",
+      "specialization": "Cardiologist",
+      "fees": 5000,
+      "time": "2.00pm"
+    },
+    {
+      "id": 3,
+      "name": "Paul",
+      "specialization": "Surgeon",
+      "fees": 5000,
+      "time": "3.00pm"
+    },
+    {
+      "id": 4,
+      "name": "Allen",
+      "specialization": "Dentist",
+      "fees": 2500,
+      "time": "2.00pm"
+    },
+    {
+      "id": 5,
+      "name": "Smith",
+      "specialization": "Eye Specialist",
+      "fees": 3000,
+      "time": "6.00pm"
+    },
+    {
+      "id": 6,
+      "name": "Emma",
+      "specialization": "Urology",
+      "fees": 6000,
+      "time": "2.00pm"
+    },
+    {
+      "id": 7,
+      "name": "vysakh",
+      "specialization": "Skin",
+      "fees": 5000,
+      "time": "5.00pm"
+    }
+  ],
+  "bookings": [
+    {
+      "d_id": 1,
+      "name": "Mariya",
+      "specialization": "Neurosurgeon",
+      "fees": 2000,
+      "time": "1.00pm",
+      "id": 1
+    },
+    {
+      "d_id": 2,
+      "name": "Anna",
+      "specialization": "Cardiologist",
+      "fees": 5000,
+      "time": "2.00pm",
+      "id": 2
+    },
+    {
+      "d_id": 3,
+      "name": "Paul",
+      "specialization": "Surgeon",
+      "fees": 5000,
+      "time": "3.00pm",
+      "id": 3
+    },
+    {
+      "d_id": 4,
+      "name": "Allen",
+      "specialization": "Dentist",
+      "fees": 2500,
+      "time": "2.00pm",
+      "id": 4
+    },
+    {
+      "d_id": 5,
+      "name": "Smith",
+      "specialization": "Eye Specialist",
+      "fees": 3000,
+      "time": "6.00pm",
+      "id": 5
+    },
+    {
+      "d_id": 6,
+      "name": "Emma",
+      "specialization": "Urology",
+      "fees": 6000,
+      "time": "2.00pm",
+      "id": 6
+    },
+    {
+      "d_id": 4,
+      "name": "Allen",
+      "specialization": "Dentist",
+      "fees": 2500,
+      "time": "2.00pm",
+      "id": 7
+    },
+    {
+      "d_id": 5,
+      "name": "Smith",
+      "specialization": "Eye Specialist",
+      "fees": 3000,
+      "time": "6.00pm",
+      "id": 8
+    },
+    {
+      "d_id": 1,
+      "name": "Mariya",
+      "specialization": "Neurosurgeon",
+      "fees": 2000,
+      "time": "1.00pm",
+      "id": 9
+    },
+    {
+      "d_id": 7,
+      "name": "vysakh",
+      "specialization": "Skin",
+      "fees": 5000,
+      "time": "5.00pm",
+      "id": 10
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
